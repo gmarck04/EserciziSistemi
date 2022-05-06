@@ -31,6 +31,8 @@ namespace luhn
                 if (posizionePari)
                 {
                     numeroParziale *= 2;
+                    if (numeroParziale > 9)
+                       numeroParziale -=9;
                 }
                 risultato += numeroParziale;                
                 contatore--;
